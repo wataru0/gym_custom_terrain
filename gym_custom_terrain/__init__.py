@@ -1,5 +1,6 @@
 import gym
 from gym.envs.registration import register
+import xml.etree.ElementTree as Et
 
 register(
     id="CustomTerrainAnt-v0",
@@ -20,6 +21,6 @@ def custom_make(env_id: str, xml_path: str, terrain_image: str):
     # 編集内容のファイルへの書き込み
     xml_file.write(xml_path, encoding="UTF-8")
 
-    # envの再読み込み
+    # envの再構成
     env = gym.make(env_id)
     return env
