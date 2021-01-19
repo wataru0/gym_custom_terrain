@@ -1,14 +1,14 @@
-import gym
 import numpy as np
 from gym import utils
 from gym.envs.mujoco import mujoco_env
-from gym import error, spaces, utils
-from gym.utils import seeding
+
+from ..core import get_tmp_xml_abs_path
 
 
 class CustomTerrainAntEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
-        mujoco_env.MujocoEnv.__init__(self, "custom_terrain_ant.xml", 5)
+        xml_path = get_tmp_xml_abs_path("custom_terrain_ant.xml")
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, a):
