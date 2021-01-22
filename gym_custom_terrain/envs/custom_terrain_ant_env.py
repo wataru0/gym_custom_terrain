@@ -26,7 +26,7 @@ class CustomTerrainAntEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         reward = forward_reward - ctrl_cost - contact_cost + survive_reward
         state = self.state_vector()
         notdone = (
-            np.isfinite(state).all() and state[2] >= 0.2 and state[2] <= 1.0
+            np.isfinite(state).all() 
         )
         done = not notdone
         ob = self._get_obs()
