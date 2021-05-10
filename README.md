@@ -1,13 +1,13 @@
 # gym_custom_terrain
 
-## インストール
+## How to install
 
 ```sh
 pip install git+https://github.com/wataru0/gym_custom_terrain.git
 ```
 
 
-## 使い方
+## How to use
 
 ```python
 from gym_custom_terrain import custom_make
@@ -26,13 +26,13 @@ while True:
     _, _, done, _ = env.step(action)
 ```
 
-## 実際の様子
+## Demo
 
-### 読み込み画像
+### Input Image
 
 <img src=https://user-images.githubusercontent.com/44032125/105473966-1256af80-5ce1-11eb-82a8-3a9346925543.png>
 
-### シミュレーション環境
+### Simulation Environment
 
 <img src=https://user-images.githubusercontent.com/44032125/105473915-036ffd00-5ce1-11eb-9568-cdedf96419d8.png>
 
