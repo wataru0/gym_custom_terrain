@@ -1,6 +1,6 @@
 # gym_custom_terrain
 This package will help you customize the terrain in MuJoCo.
-
+Terrain information can be specified as grayscale images.
 ## How to install
 
 ```sh
