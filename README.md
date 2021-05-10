@@ -1,4 +1,5 @@
 # gym_custom_terrain
+This package will help you customize the terrain in MuJoCo.
 
 ## How to install
 
